@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+.container {
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: auto;
+
+}
+
+.informacao {
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    letter-spacing: 5px;
+    margin: 15px;
+    margin-bottom: 0;
+    height: 30px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 8pt;
+    color: hsl(212, 21%, 14%);
+
+}
+
+.perfurme-foto {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.marca {
+    margin: 10px;
+    margin-top: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Fraunces';
+}
+
+.descricao {
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 15px;
+    font-family: 'Montserrat';
+    font-size: 14pt;
+    line-height: 25px;
+    color: hsl(228, 12%, 48%);
+}
+
+.preco {
+    display: flex;
+    align-items: center;
+}
+
+.preco .com-desconto {
+    color: hsl(158, 36%, 37%);
+    margin: 10px;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Fraunces';
+}
+
+.preco .sem-desconto {
+    color: hsla(0, 0%, 43%, 0.823);
+    text-decoration: line-through;
+    font-family: 'Montserrat';
+}
+
+.informacao .cart-button {
+    background-color: hsl(158, 36%, 37%);
+    border-style: none;
+    width: 95%;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    height: 45px;
+}
+
+
+
+.cart-button img {
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+
+.cart-text {
+    color: white;
+    font-family: 'Montserrat';
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14pt;
+    margin-top: 5px;
+}
+
+
+@media screen and (min-width: 650px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .perfurme-foto {
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: relative;
+        width: 30%;
+    }
+
+    .informacao {
+        border-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 50%;
+        height: 339px;
+    }
+
+    .informacao .cart-button:hover{
+        background-color: hsl(158, 89%, 21%);
+        
+    }
+
+    * {
+        margin: 0;
+        top: 0;
+        padding: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
